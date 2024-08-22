@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    background-color: black; /* Base color for the section */
+    background-image: 
+        url(pics/noise.svg); /* Your SVG noise texture */
+    background-size: cover; /* Adjust as needed */
+    background-blend-mode:luminosity; /* Blend the SVG with the color */
+    box-sizing: border-box;
+    width: 100%;
+    height: 100dvh;
+    position: relative;
+}
+:root {
+    --primary-color: #fff;
+    --secondary-color: #D3D3D3;
+    --background-color: #000000;
+    --heading-size: 1.5rem;
+    --span-color: #d8d4a6;
+}
+.navbar {
+    top: 0; /* Aligns the navbar to the top of the viewport */
+    left: 0; /* Aligns the navbar to the left of the viewport */
+    width: 100%; /* Makes the navbar span the entire width of the viewport */
+    position: absolute; /* Keeps the navbar positioned relative to the viewport */
+    z-index: 10; /* Ensures it stays on top of other content */
+    display: flex; /* Allows children to align horizontally */
+    background-color: rgba(36, 36, 36, 0.288); /* Optional: background color for visibility */
+    padding: 12px; /* Optional: Adds padding for spacing */
+}
+
+.navelements{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    background-color: transparent;
+    max-width: 100vw;
+}
+.navelement:nth-child(1){
+    margin-left: 5%;/* Adjust spacing between elements as needed */
+}
+.navelement{
+    max-width: 100vw;
+}
+.phone{
+    height: 27px;
+    cursor: pointer;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.navelements a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+#sidebar{
+    display: none;
+}
+#sidebar.show{
+    display: flex;
+    transform: translate(0);
+}
+.menu-icon {
+    display: none;
+}
+
+footer{
+    padding-top: 70px;
+    padding-bottom: 20px;
+    margin-top: 150px;
+    border-top: 0.5px solid #d3d3d38f;
+
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: var(--secondary-color);
+    position: relative;
+    gap: 110px;
+}
+.footer2{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer3{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer4{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+.footer1 span{
+    font-size: 0.85rem;
+}
+.footer3 span{
+    color: var(--span-color);
+    font-size: 0.9rem;
+    margin-bottom: 9px;
+}
+.footer2 span{
+    color: var(--span-color);
+    font-size: 0.9rem;
+    margin-bottom: 9px;
+
+}
+.footer3 a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+}
+.footer2 a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+
+}
+.footer1{
+    margin-bottom: -100px;
+
+}
+.spanheading{
+    color: var(--span-color);
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+.spandescription{
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+}
+.inputcontainer input{
+    padding: 15px 10px;
+    border-radius: 1rem;
+    width: 270px;
+    margin-top: 10px;
+    border: 0.8px solid var(--secondary-color);
+    background: transparent;
+    color: #fff;
+
+}
+.inputbtn{
+    padding: 15px 10px;
+    border-radius: 1rem;
+    color: #fff;
+    background: transparent;
+    width: 80px;
+    border: 0.8px solid var(--secondary-color) ;
+    font-family: 'BOOWIE', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.inputcontainer input:focus {
+    outline: none; /* Removes the default focus outline */
+    border: 0.8px solid var(--secondary-color); /* Keeps the border the same as the non-focused state */
+}
+
+
+
+.main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.destination-content{
+    margin-top: 100px;
+}
+.destination-content h1{
+    font-size: 3.3rem;
+    color: var(--primary-color);
+    font-family: 'BOOWIE', sans-serif;
+    letter-spacing: .04em;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.span2{
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.span3{
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 7px;
+}
+.span4{
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 7px;
+}
+.call{
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: -3px;
+    margin-top: 9px;
+}
+.callspan{
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.callimg{
+    height: 65px;
+}
+
+#map{
+    height: 350px;
+    width: 100%;
+}
+.map-container{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 80px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+
+@media (max-width: 430px) {
+    .navelements{
+        display: none;
+    }
+    #sidebar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.733); /* Background color for the sidebar */
+        position: fixed; 
+        z-index: 4;
+        transition: transform 0.3s ease, display 0s 0.3s; 
+        transform: translateX(-100%);
+    }
+    #sidebar.show{
+        display: flex;
+        transform: translate(0);
+    }
+    .sidebar-items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .sidebar-items a{
+        text-decoration: none;
+        color: var(--primary-color);
+        font-size: 1.2rem;
+    }
+    .navbar{
+        background-color: transparent;
+    }
+    .menu-icon {
+        margin-left: auto;
+        display: flex;
+    }
+    .menu{
+        height: 45px;
+    }
+
+    .footer-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        gap: 10px; /* Adjust gap for smaller screens */
+        align-items: flex-start; /* Align items to the left */
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer1, .footer2, .footer3, .footer4 {
+        width: 100%; /* Full width for responsiveness */
+        text-align: left; /* Ensure text is left-aligned */
+    }
+
+    .footer2 a, .footer3 a {
+        font-size: 0.75rem; /* Adjust font size for smaller screens */
+    }
+
+    .spanheading, .spandescription {
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+
+    .inputcontainer input, .inputbtn {
+        width: 90%; /* Full width for input and button */
+        padding: 10px 15px;
+    }
+
+    .inputbtn {
+        max-width: 40%; /* Allow button to expand fully */
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+    .footer1 {
+        top: 0;
+        margin-bottom: 0;
+    }
+
+    .footer1 span{
+        font-size: 0.8rem;
+    }
+
+    .footer1 {
+        order: 4; /* Move footer1 to the last position */
+    }
+
+    .footer2 {
+        order: 1; /* Move footer2 to the first position */
+        
+    }
+
+    .footer3 {
+        order: 2; /* Move footer3 to the second position */
+        margin-top: 20px;
+    }
+
+    .footer4 {
+        order: 3; /* Move footer4 to the third position */
+        margin-top: 20px;
+    }
+
+    
+}
+
+
+
+
+
+
+.custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+    max-width: 90%;
+    width: 300px;
+}
+
+.custom-alert p {
+    margin: 0;
+    font-size: 1rem;
+    color: #ffffff; /* Beautiful Bowie Green */
+}
+
+.custom-alert button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #2c6f41; /* Beautiful Bowie Green */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.custom-alert button:hover {
+    background: #46b66f; /* Darker shade of green */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .custom-alert {
+        width: 90%;
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .custom-alert p {
+        font-size: 0.875rem;
+    }
+
+    .custom-alert button {
+        padding: 8px 16px;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .custom-alert {
+        width: 65%;
+        max-width: 65%;
+        padding: 10px;
+    }
+
+    .custom-alert p {
+        font-size: 0.75rem;
+    }
+
+    .custom-alert button {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+
+
+    .destination-content h1{
+        font-size: 2.8rem;
+
+    }
+    .span2{
+        color: var(--secondary-color);
+        text-transform: uppercase;
+        font-size: 0.9rem;
+    }
+    .span3{
+        color: var(--secondary-color);
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        margin-top: 11px;
+    }
+    .span4{
+        font-size: 0.9rem;
+        margin-top: 11px;
+    }
+    .call{
+        margin-top: 11px;
+    }
+    .callspan{
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: var(--secondary-color);
+    }
+    .main{
+        margin-top: 20px;
+    }
+    .callimg{
+        height: 55px;
+    }
+}

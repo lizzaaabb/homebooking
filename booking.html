@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/boowie" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+
+<body>
+    <nav class="navbar">
+        <div class="navelements">
+            <a href="index.html" class="navelement">Our Houses</a>
+            <a href="location.html" class="navelement">Destinations</a>
+            <a href="#" class="navelement">About Us</a>
+            <a href="#" class="navelement">Booking</a>
+            <div class="contact">
+            <img src="pics/phone-call (4).png" class="phone">
+            <a href="#" class="contactus">Contact Us</a></div>
+        </div>
+        <div class="menu-icon">
+            <img src="pics/menu-bar.png" alt="Menu" id="menu-toggle" class="menu">
+        </div>
+    </nav>
+    <div class="sidebar" id="sidebar">
+
+        <div class="sidebar-items">
+            <a href="index.html" class="item">Our Houses</a>
+            <a href="location.html" class="item">Destinations</a>
+            <a href="#" class="item">About Us</a>
+            <a href="booking.html" class="item">Booking</a>
+            <a href="booking.html" class="item">Contact</a>
+        </div>
+    </div>
+
+
+
+    <div class="main" id="mainher">
+        <div class="main-section">
+            <div class="formtitle">
+                <h1>RESERVATION</h1>
+                <span class="span1">FOR GENERAL ENQUIRIES PLEASE GET IN TOUCH</span>
+            </div>
+            <form id="form1">
+                <div class="check">
+                    <div class="checkinout">
+                       
+                       <input type="text" id="checkIn" name="checkIn" placeholder="Check-In" required autocomplete="off">
+                    
+                       <input type="text" id="checkOut" name="checkOut" placeholder="Check-Out" required autocomplete="off">
+                       
+                     
+                    </div>
+    
+                    <div class="guests">
+    
+                        <select id="guests" name="guests" required>
+                            <option value="" disabled selected>Guest Count</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="More">More</option>
+                        </select>
+    
+                    </div>
+                </div>
+                <div class="texts">
+                    <div class="emails">
+                        <input type="text" id="name" name="fullName" placeholder="Full Name" required>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <input type="text" id="number" name="number" placeholder="Phone Number" required>
+    
+                    </div>
+                </div>
+                <div class="formbtn">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+    
+    
+        </div>
+        <div class="main-right">
+            <img src="pics/circle.png" class="circle">
+            <p class="names">Elizabeth & Catherine</p>
+            <p class="phones">+123 574 09 89 43</p>
+            <a href="#" class="mailaddress">masdumoulin@gmail.com</a>
+            <p class="address">Provence, France 0159</p>
+            <a href="#" class="maps">SEE ON GOOGLE MAPS</a>
+            <a href="#" class="maps">CHECK AVAILABILITY</a>
+            <a href="#" class="maps">CHECK PRICING</a>
+            <img src="pics/facebook-logo-in-circular-shape.png" class="facebook">
+
+
+        </div>
+    </div>
+
+
+    <div class="pricing">
+        <div class="pricing-title">
+            <h2 class="pricingtitle">PRICING</h2>
+            <span class="pricingspan">Please find the pricing for the house below</span>
+        </div>
+        <div class="pricing-container">
+            <div class="pricing-item">
+                <div class="pricingheader">
+                    <p class="pricehead">Low Season</p>
+                    <p class="pricedate">15 March - 30 April</p>
+                </div>
+                <div class="price">
+                    <p class="euro">335€</p>
+                    <p class="night">Per night</p>
+                </div>
+            </div>
+
+            <div class="pricing-item">
+                <div class="pricingheader">
+                    <p class="pricehead">Medium Season</p>
+                    <p class="pricedate">01 May - 31 May</p>
+                </div>
+                <div class="price">
+                    <p class="euro">390€</p>
+                    <p class="night">Per night</p>
+                </div>
+            </div>
+
+            <div class="pricing-item">
+                <div class="pricingheader">
+                    <p class="pricehead">Medium Season 1</p>
+                    <p class="pricedate">01 June - 30 June</p>
+                </div>
+                <div class="price">
+                    <p class="euro">490€</p>
+                    <p class="night">Per night</p>
+                </div>
+            </div>
+
+            <div class="pricing-item">
+                <div class="pricingheader">
+                    <p class="pricehead">High Season</p>
+                    <p class="pricedate">01 July - 10 July</p>
+                </div>
+                <div class="price">
+                    <p class="euro">595€</p>
+                    <p class="night">Per night</p>
+                </div>
+            </div>
+
+            <div class="pricing-item">
+                <div class="pricingheader">
+                    <p class="pricehead">Peak Season</p>
+                    <p class="pricedate">11 July - 31 August</p>
+                </div>
+                <div class="price">
+                    <p class="euro">780€</p>
+                    <p class="night">Per night</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="pricingbtn">
+            <a href="#mainher"><buttton class="book">BOOK</buttton></a>
+        </div>
+    </div>
+
+    
+
+
+    <footer>
+        <div class="footer-container">
+            
+            <div class="footer1">
+                <span>Liz © 2024 All rights reserved</span>
+            </div>
+
+            <div class="footer2">
+                <span>DISCOVER</span>
+                <a href="#">Our mission</a>
+                <a href="#">Your tailor made holiday</a>
+                <a href="#">How we choose our houses</a>
+                <a href="#">What makes us unique</a>
+                <a href="#">Get inspired</a>
+            </div>
+
+            <div class="footer3">
+                <span>GET INFORMED</span>
+                <a href="#">Careers</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Villagio club</a>
+                <a href="#">Terms of use</a>
+                <a href="#">FAQ</a>
+            </div>
+
+            <div class="footer4">
+                <span class="spanheading">SIGN UP FOR THE NEWSLETTER</span>
+                <span class="spandescription">Subscribe to our newsletter to get curated
+                    travel inspirations.
+                </span>
+                <div class="inputcontainer">
+                    <form id="email-form">
+                        <div class="inputcontainer">
+                            <input type="text" placeholder="E-MAIL" name="email">
+                            <button type="submit" class="inputbtn">SEND</button>
+                        </div>
+                    </form>
+            
+
+            </div>
+        </div>
+    </footer>
+
+
+    
+    
+
+
+
+
+
+
+
+    
+
+     <!-- AOS JS (must be loaded first) -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+     <!-- EmailJS JS -->
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+     
+
+     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+     
+
+     
+     <!-- Your custom JS -->
+     <script src="app2.js"></script>
+</body>
+</html>
